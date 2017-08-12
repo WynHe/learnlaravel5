@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// test
+Route::get('now', function () {
+    return date("Y-m-d H:i:s");
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
